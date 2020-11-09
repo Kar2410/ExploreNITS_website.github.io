@@ -7919,3 +7919,9 @@ body #login-reg .btn-link-1 {
 	margin: 5px 0px;
 }
 }
+@media (max-width:1300px) {
+	.dark-mode1 {
+		display: flex;
+		align-items:center;
+	}
+}

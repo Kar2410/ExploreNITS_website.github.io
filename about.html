@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="scss/skin.css">
-
+    <link rel="stylesheet" href="scss/about-dark.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
@@ -17,8 +17,8 @@
 </head>
 
 
-<body id="wrapper">
-
+<body id="wrapper" class="body">
+    <dark id="body" class="dark-mode">
 
 
     <header>
@@ -44,6 +44,9 @@
                         <li><a href="login.html">Sign In</a></li>
                         <li><a href="registration.html">Sign Up</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li>
+                            <button class="dark-mode1" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+                        </li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -80,7 +83,7 @@
                        <p>
                             The Electra Society comprises of students of all 4 years of its department that hold certain posts such as the President, Vice President, General Secretary, Assistant General Secretary, Senior Executive members, Executive members, Technical members, Class Representatives etc. 
                         <br><br> These students together form the core of its department that act as communication passage between the other students and the faculty members and the other departments. The society holds various events throughout the year for the overall development of its students. These include: </p>
-                    <p style=" font-size: 20px; word-spacing: 2px;"> 1. PowerSurge
+                    <p style=" font-size: 20px; word-spacing: 2px;" class="event"> 1. PowerSurge
                      2. Branch Freshers   
                      3. Technical workshops
                      4. Sports week</p>
@@ -1029,7 +1032,7 @@
             </div>
         </div>
     </section>
-<p><br></p>
+
 
 
 
@@ -1143,7 +1146,15 @@
         <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
     </div>
 
-
+</dark>
 </body>
+<script>
+    function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
+console.log("bhhah");
+</script>
 
 </html>

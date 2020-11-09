@@ -14,44 +14,47 @@
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="scss/skin.css">
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="script/index.js"></script>
+    <link rel="stylesheet" href="scss/gallery-dark.css" >
+   
 </head>
 
-<body id="wrapper">
-   <header>
-        <nav class="navbar navbar-inverse">
-            <div class="container">
+
+<body id="wrapper" class="body">
+    <dark id="body" class="dark-mode">
+<header>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="row">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
                     <a class="navbar-brand" href="#">
-                        <h1>ELECTRA</h1><span>ELECTRICAL ENGINEERING SOCIETY</span></a>
+                        <h1>Electra</h1><span>Electrical Engineering Society</span></a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
+                        <li ><a href="index.html">Home</a></li>
                         <li><a href="event.html">Events</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li ><a href="gallery_1.html">Gallery</a></li>            
+                        <li class="active"><a href="gallery_1.html">Gallery</a></li>
                         <li><a href="resources.html">Resources</a></li>
                         <li><a href="login.html">Sign In</a></li>
                         <li><a href="registration.html">Sign Up</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li>
+                            <button class="dark-mode1" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+                        </li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
             </div>
-        </nav>
-        <!--/.nav-ends -->
-    </header>
-
+        </div>
+    </nav>
+</header>
 
 
     <section id="top_banner">
@@ -414,6 +417,10 @@
         </div>
         <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
     </div>
+    </dark>
 </body>
-
+   <script src="./script/darkmode.js"></script> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+   <script src="script/index.js"></script>
 </html>
