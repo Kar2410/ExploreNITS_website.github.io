@@ -6277,7 +6277,7 @@ body #features a.readmore {
 	text-transform: uppercase;
 }
 body #about {
-	background-color: #fff !important;
+	background-color: #f9f9f9;
 	position: relative;
 }
 body #about .section-block, body #about #features, body #about #process, body #about #testimonial, body #about #footer, body #about #about-page-section-3, body #about #skills, body #about #team-member, body #about #portfolio, body #about #faq, body #about #contact, body #about #contact-page, body #about #features-page .subsection1, body #features-page #about .subsection1, body #about #features-page .subsection2, body #features-page #about .subsection2, body #about #features-page .subsection3 .right-section, body #features-page .subsection3 #about .right-section, body #about #features-page .subsection3 .left-section, body #features-page .subsection3 #about .left-section, body #about #features-page .subsection4, body #features-page #about .subsection4, body #about #login-reg {
@@ -7919,61 +7919,3 @@ body #login-reg .btn-link-1 {
 	margin: 5px 0px;
 }
 }
-@media (max-width:1300px) {
-	.dark-mode1 {
-		display: flex;
-		align-items:center;
-	}
-}
-
-
-
-
-
-
-
-
-  body.dark-mode {
-	background-color: #313131;
-	color: #DFDFDF;
-  }
-  .hidden {
-	display: none;
-  }
-  fieldset.toggle input {
-	opacity: 0;
-  }
-  fieldset.toggle label {
-	display: inline-block;
-	line-height: 2;
-	position: relative;
-	z-index: 2;
-	margin-left: 3rem;
-  }
-  fieldset.toggle label::before, fieldset.toggle label::after {
-	content: "";
-	height: 1rem;
-	position: absolute;
-	left: 0;
-	top: calc((100% - 1rem) / 2);
-	margin-left: -3rem;
-	transition: filter 0.25s;
-  }
-  fieldset.toggle label::before {
-	width: 2.5rem;
-	border-radius: 0.5rem;
-	background-color: #aaa;
-  }
-  fieldset.toggle label::after {
-	width: 1rem;
-	border-radius: 100%;
-	background-color: #000;
-	transition: margin-left 0.25s ease-in-out;
-  }
-  fieldset.toggle input:checked ~ label::after {
-	margin-left: -1.5rem;
-  }
-  fieldset.toggle input:checked ~ label::before, fieldset.toggle input:checked ~ label::after {
-	filter: invert(1);
-  }
-  

@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="scss/skin.css">
-    <link rel="stylesheet" href="scss/signin-signup-dark.css" >
+     <link rel="icon" href="img/ELECTRALOGO.png" sizes="16x16" type="image/png">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
 </head>
 
-<body id="wrapper" class="body">
-    <dark id="body" class="dark-mode">
+<body id="wrapper">
+
    
 
     <header>
@@ -39,20 +40,9 @@
                         <li><a href="about.html">About</a></li>
                         <li><a href="gallery_1.html">Gallery</a></li>
                         <li><a href="resources.html">Resources</a></li>
-                        <li><a href="login.html">Sign In</a></li>
-                        <li class="active"><a href="registration.html">Sign Up</a></li>
+                        <li><a href="main_file/index.html">Explore NITS</a></li>
+                        <!-- <li class="active"><a href="registration.html">Sign Up</a></li> -->
                         <li><a href="blog.html">Blog</a></li>
-                        <li>
-                                
-
-                            <fieldset class="toggle hidden">
-                               
-                                <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()"/>
-                                <label for="dark-toggle" class="dark-mode1"></label>
-                           
-                            </fieldset>
-                       
-                        </li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -162,7 +152,7 @@
 
 
     </section>
-<footer>
+
     <section id="footer">
         <div class="container">
             <div class="row">
@@ -245,7 +235,6 @@
             </div>
         </div>
     </section>
-    </footer>
     <div id="panel">
         <div id="panel-admin">
             <div class="panel-admin-box">
@@ -264,18 +253,5 @@
     </div>
 
 </body>
-<script>
-    function toggleDarkLight() {
-  var body = document.getElementById("body");
-  var currentClass = body.className;
-  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-}
-console.log("bhhah");
 
-document.addEventListener("DOMContentLoaded", function () {
-  let toggle = document.querySelector("fieldset.toggle");
-  toggle.classList.toggle("hidden");
-});
-
-</script>
 </html>
