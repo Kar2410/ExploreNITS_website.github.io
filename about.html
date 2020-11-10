@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="scss/skin.css">
      <link rel="icon" href="img/ELECTRALOGO.png" sizes="16x16" type="image/png">
-
+     <link rel="stylesheet" href="scss/about-dark.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
@@ -18,7 +18,9 @@
 </head>
 
 
-<body id="wrapper">
+<body id="wrapper" class="body">
+    <dark id="body" class="dark-mode">
+
 
 
 
@@ -45,6 +47,17 @@
                         <li><a href="Explore_NITS/index.html">Explore NITS</a></li>
                         <!-- <li class="active"><a href="registration.html">Sign Up</a></li> -->
                         <li><a href="blog.html">Blog</a></li>
+                        <li>
+                                
+
+                            <fieldset class="toggle hidden">
+                               
+                                <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()"/>
+                                <label for="dark-toggle" class="dark-mode1"></label>
+                           
+                            </fieldset>
+                       
+                        </li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -1030,7 +1043,6 @@
             </div>
         </div>
     </section>
-<p><br></p>
 
 
 
@@ -1146,5 +1158,5 @@
 
 
 </body>
-
+<script src="./script/darkmode.js"></script> 
 </html>
