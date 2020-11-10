@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="scss/skin.css">
-
+    <link rel="stylesheet" href="scss/dark-mode.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
 </head>
 
-<body id="wrapper">
+<body id="wrapper" class="body">
+    <dark id="body" class="dark-mode">
+       
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container">
@@ -39,11 +41,22 @@
                         <li><a href="login.html">Sign In</a></li>
                         <li><a href="registration.html">Sign Up</a></li>
                         <li><a href="blog.html">Blog</a></li>
+                        <li>
+                                
 
+                            <fieldset class="toggle hidden">
+                               
+                                <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()"/>
+                                <label for="dark-toggle" class="dark-mode1"></label>
+                           
+                            </fieldset>
+                       
+                        </li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
             </div>
+        
         </nav>
         <!--/.nav-ends -->
     </header>
@@ -306,8 +319,8 @@ The design, development and delivery of each of the programs offered at The GATE
             </div>
         </div>
     </section>
- 
-    <section id="footer">
+ <footer>
+    <section id="footer" class="dark-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-3 col-xs-12 block">
@@ -393,7 +406,7 @@ The design, development and delivery of each of the programs offered at The GATE
             </div>
         </div>
     </section>
-
+</footer>
 
 </section>
     <div id="panel">
@@ -414,8 +427,23 @@ The design, development and delivery of each of the programs offered at The GATE
     </div>
 
 
-
+</dark>
 
 </body>
+<script>
+    function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
+console.log("bhhah");
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  let toggle = document.querySelector("fieldset.toggle");
+  toggle.classList.toggle("hidden");
+});
+
+
+</script>
 </html>

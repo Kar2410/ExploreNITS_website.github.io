@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="scss/skin.css">
-
+    <link rel="stylesheet" href="scss/resources-dark.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="script/index.js"></script>
 </head>
 
-<body id="wrapper">
+<body id="wrapper" class="body">
+    <dark id="body" class="dark-mode">
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container">
@@ -39,7 +40,17 @@
                         <li><a href="login.html">Sign In</a></li>
                         <li><a href="registration.html">Sign Up</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                                       
+                        <li>
+                                
+
+                            <fieldset class="toggle hidden">
+                               
+                                <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()"/>
+                                <label for="dark-toggle" class="dark-mode1"></label>
+                           
+                            </fieldset>
+                       
+                        </li> 
                 </div>
                 <!--/.nav-collapse -->
             </div>
@@ -240,11 +251,21 @@
         <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
     </div>
 </body>
+<script>
+    function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
+console.log("bhhah");
 
-</html>            </div>
-            </div>
-        </div>
-    </section>
+console.log("bhhah");
+document.addEventListener("DOMContentLoaded", function () {
+  let toggle = document.querySelector("fieldset.toggle");
+  toggle.classList.toggle("hidden");
+});
+</script>
+</html>           
 
 <!--
     <div id="panel">

@@ -8,23 +8,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="scss/main.css">
         <link rel="stylesheet" href="scss/skin.css">
-    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        <script src="script/index.js"></script>
+        <link rel="stylesheet" href="scss/blog-darkmode.css">
+       
     </head>
     
-    <body id="wrapper">
-       <header>
-            <nav class="navbar navbar-inverse">
-                <div class="container">
+    
+        
+    <body id="wrapper" class="body">
+        <dark id="body" class="dark-mode">
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
                         <a class="navbar-brand" href="#">
                             <h1>Electra</h1><span>Electrical Engineering Society</span></a>
                     </div>
@@ -35,17 +37,27 @@
                             <li><a href="about.html">About</a></li>
                             <li><a href="gallery_1.html">Gallery</a></li>
                             <li><a href="resources.html">Resources</a></li>
-                            <li><a href="resources.html">Resources</a></li>
                             <li><a href="login.html">Sign In</a></li>
-                            <li><a href="registration.html">Sign Up</a></li>            
-                            <li class="active"><a href="blog.html">Blog</a></li>
+                            <li><a href="registration.html">Sign Up</a></li>
+                            <li  class="active"><a href="blog.html">Blog</a></li>
+                            <li>
+                                
+
+                                <fieldset class="toggle hidden">
+                                   
+                                    <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()"/>
+                                    <label for="dark-toggle" class="dark-mode1"></label>
+                               
+                                </fieldset>
+                           
+                            </li>
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
                 </div>
-            </nav>
-            <!--/.nav-ends -->
-        </header>
+            </div>
+        </nav>
+    </header>
     
     
     
@@ -150,8 +162,6 @@
                                 </div> 
                         </div>
                     </div>
-            
-            
                 </section>
             
                 <section id="bottom-footer">
@@ -185,6 +195,11 @@
                     </div>
                     <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
                 </div>
-            
+    </dark> 
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="script/index.js"></script>
+    <script src="./script/darkmode.js"></script> 
+     
 </html>     

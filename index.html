@@ -11,50 +11,59 @@
     <link rel="stylesheet" href="scss/skin.css">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Lobster&family=Montaga&family=Piedra&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="./script/index.js"></script>
+    <link rel="stylesheet" href="scss/index-darkmode.css" >
+    
 </head>
 
-<body id="wrapper">
 
+    
+<body id="wrapper" class="body">
+    <dark id="body" class="dark-mode">
 
 
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container">
-                <div class="row">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			  </button>
-                        <a class="navbar-brand" href="#">
-                            <h1>Electra</h1><span>Electrical Engineering Society</span></a>
-                    </div>
-                    <div id="navbar" class="collapse navbar-collapse navbar-right">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li><a href="event.html">Events</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="gallery_1.html">Gallery</a></li>
-                            <li><a href="resources.html">Resources</a></li>
-                            <li><a href="login.html">Sign In</a></li>
-                            <li><a href="registration.html">Sign Up</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-
-                        </ul>
-                    </div>
-                    <!--/.nav-collapse -->
+                    <a class="navbar-brand" href="#">
+                        <h1>ELECTRA</h1><span>ELECTRICAL ENGINEERING SOCIETY</span></a>
                 </div>
+                <div id="navbar" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="event.html">EVENTS</a></li>
+                        <li ><a href="#about">About</a></li>
+                        <li><a href="gallery_1.html">Gallery</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="registration.html">Sign Up</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li>
+                                
+
+                            <fieldset class="toggle hidden">
+                               
+                                <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()"/>
+                                <label for="dark-toggle" class="dark-mode1"></label>
+                           
+                            </fieldset>
+                       
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
             </div>
         </nav>
+        <!--/.nav-ends -->
     </header>
     <!--/.nav-ends -->
-
+                                
     <div id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -110,16 +119,15 @@
     </section>
 
 
-    <section id="about">
+    <section id="about" class="about">
         <div class="image-holder col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-left">
             <div class="background-imgholder">
                 <img src="img/1.jpg" alt="about" class="img-responsive" style="display:none;" />
             </div>
         </div>
-
+    
         <div class="container-fluid">
-
-            <div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-2 col-xs-12 text-inner ">
+            <div class="col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-2 col-xs-12 text-inner " id="about-ul">
                 <div class="text-block">
                     <div class="section-heading">
                         <h1>ABOUT <span>US</span></h1>
@@ -133,13 +141,11 @@
                         <li> <i class="fa fa-check"></i>The Electra Society aims at guiding the students to undertake various activities </li>
                         <li> <i class="fa fa-check"></i>Activities like technical seminars and debates on various fields of electrical engineering which enables the students to keep pace with the rapidly changing technology.</li>
                     </ul>
-
-
-
-
                 </div>
             </div>
         </div>
+
+    
     </section>
 
 
@@ -323,7 +329,7 @@
 
 
 
-
+<footer>
     <section id="footer">
         <div class="container">
             <div class="row">
@@ -435,9 +441,11 @@
         </div>
         <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
     </div>
-
+   </footer> 
+</dark>
 </body>
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script> 
+    <script src="./script/darkmode.js"></script> 
 </html>
