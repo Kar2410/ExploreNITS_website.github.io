@@ -43,7 +43,15 @@
                         <li><a href="registration.html">Sign Up</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li>
-                            <button class="dark-mode1" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+                                
+
+                            <fieldset class="toggle hidden">
+                               
+                                <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()"/>
+                                <label for="dark-toggle" class="dark-mode1"></label>
+                           
+                            </fieldset>
+                       
                         </li>
                     </ul>
                 </div>
@@ -252,5 +260,9 @@
   body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
 }
 console.log("bhhah");
+document.addEventListener("DOMContentLoaded", function () {
+  let toggle = document.querySelector("fieldset.toggle");
+  toggle.classList.toggle("hidden");
+});
 </script>
 </html>

@@ -32,16 +32,24 @@
                     </div>
                     <div id="navbar" class="collapse navbar-collapse navbar-right">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="event.html">Events</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="gallery_1.html">Gallery</a></li>
                             <li><a href="resources.html">Resources</a></li>
                             <li><a href="login.html">Sign In</a></li>
                             <li><a href="registration.html">Sign Up</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li  class="active"><a href="blog.html">Blog</a></li>
                             <li>
-                                <button class="dark-mode1" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+                                
+
+                                <fieldset class="toggle hidden">
+                                   
+                                    <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()"/>
+                                    <label for="dark-toggle" class="dark-mode1"></label>
+                               
+                                </fieldset>
+                           
                             </li>
                         </ul>
                     </div>
@@ -193,4 +201,5 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="script/index.js"></script>
     <script src="./script/darkmode.js"></script> 
+     
 </html>     

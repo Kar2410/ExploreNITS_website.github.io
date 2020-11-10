@@ -46,7 +46,15 @@
                         <li><a href="registration.html">Sign Up</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li>
-                            <button class="dark-mode1" type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+                                
+
+                            <fieldset class="toggle hidden">
+                               
+                                <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()"/>
+                                <label for="dark-toggle" class="dark-mode1"></label>
+                           
+                            </fieldset>
+                       
                         </li>
                     </ul>
                 </div>
@@ -423,4 +431,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
    <script src="script/index.js"></script>
+
+
+   
 </html>
