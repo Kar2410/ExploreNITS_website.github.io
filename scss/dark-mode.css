@@ -4,27 +4,34 @@
     color: #eee;
     border:none;
     margin:none;
+    transition: 0.6s;
+
 }
 
 .dark-mode .dark-mode1{
-    background-color: black !important;
+    background-color: #121212 !important;
     color: #eee;
     border: none;
+    transition: 0.6s;
+
 }
-.dark-mode .navbar {
-    background-color: black;
-    color: #eee !important;
-}
+
 .dark-mode .navbar-brand h1 {
 color: #eee !important;
+transition: 0.6s;
+
 }
 .dark-mode .dark-mode1{
-    background-color:black !important;
+    background-color:#121212 !important;
     color: #eee;
+    transition: 0.6s;
+
 }
 .dark-mode button {
     background-color: #eee !important;
     color: #111 !important;
+    transition: 0.6s;
+
 }
 .dark-mode .col-sm-6 {
     background-color: #111 !important;
@@ -33,28 +40,29 @@ color: #eee !important;
 
 
 .dark-mode .subsection2 {
-    background-color: black !important;
+    background-color: #121212 !important;
+    transition: 0.6s;
+
 }
 .dark-mode .subsection3 {
-    background-color: black !important;
+    background-color: #121212 !important;
+    transition: 0.6s;
+
 }
 .dark-mode .subsection4 {
-    background-color: black !important;
+    background-color: #121212 !important;
+    transition: 0.6s;
+
 }
 
 .dark-mode .pricing-price , .pricing-plan {
     background-color: rgb(14, 14, 14) !important;
     color: rgb(194, 194, 194)  !important;
+    transition: 0.6s;
+
 }
 .dark-mode .pricing-amount {
     color: rgb(194, 194, 194) !important;
-}
-.dark-mode footer {
-    background-color:black !important;
-}
-.dark-mode #footer {
-    background-color:black !important;
-}
-.dark-mode #bottom-footer {    
-    background-color:black !important;
+    transition: 0.6s;
+
 }
