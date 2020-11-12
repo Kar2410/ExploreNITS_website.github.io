@@ -1,0 +1,31 @@
+.dark-mode1 {
+    background-color:#fff !important;
+    color: #eee;
+    border:none;
+    margin:none;
+    transition: 0.6s;
+}
+.light-mode .navbar {
+    background-color:#fff;
+    transition: 0.6s;
+    
+}
+.light-mode .navbar-brand h1 {
+color: #121212 !important;
+transition: 0.6s;
+}
+.dark-mode .dark-mode1{
+    background-color: #121212 !important;
+    color: #eee;
+    border: none;
+    transition: 0.6s;
+}
+
+.dark-mode .body {
+    background-color: #121212;
+    transition: 0.6s;
+}
+.dark-mode #portfolio {
+    background-color: #121212;
+    transition: 0.6s;
+}

@@ -1,0 +1,43 @@
+.dark-mode1 {
+  background-color:#fff!important;
+  color: #eee;
+  border:none;
+  margin:none;
+  transition: 0.6s;
+
+}
+
+.dark-mode .dark-mode1{
+  background-color: #121212 !important;
+  color: #eee;
+  transition: 0.6s;
+
+}
+.dark-mode #faq {
+    background-color: #121212;
+    transition: 0.6s;
+
+}
+.dark-mode #faq h2 {
+  color: aliceblue;
+  transition: 0.6s;
+
+}
+.dark-mode .panel-heading , .dark-mode .panel {
+    background-color: #1a1a1a !important;
+    border:none;
+    transition: 0.6s;
+
+}
+.dark-mode .navbar {
+  background-color:#121212;
+  color: #eee !important;
+  transition: 0.6s;
+
+}
+.dark-mode .navbar-brand h1 {
+color: #eee !important;
+transition: 0.6s;
+
+}
+
