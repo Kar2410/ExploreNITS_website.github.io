@@ -867,7 +867,7 @@ h2, h3 {
 .glyphicon-tent:before {
 	content: "\26fa";
 }
-.glyphicon-#121212board:before {
+.glyphicon-blackboard:before {
 	content: "\e218";
 }
 .glyphicon-bed:before {
@@ -3394,9 +3394,7 @@ pointer-events: none;
 	position: relative;
 	display: block;
 	padding: 10px 15px;
-	color:#363636 !important;
 }
-
 .nav > li > a:hover, .nav > li > a:focus {
 	text-decoration: none;
 	background-color: #eeeeee;
@@ -6279,7 +6277,7 @@ body #features a.readmore {
 	text-transform: uppercase;
 }
 body #about {
-	background-color: #f9f9f9;
+	background-color: #fff !important;
 	position: relative;
 }
 body #about .section-block, body #about #features, body #about #process, body #about #testimonial, body #about #footer, body #about #about-page-section-3, body #about #skills, body #about #team-member, body #about #portfolio, body #about #faq, body #about #contact, body #about #contact-page, body #about #features-page .subsection1, body #features-page #about .subsection1, body #about #features-page .subsection2, body #features-page #about .subsection2, body #about #features-page .subsection3 .right-section, body #features-page .subsection3 #about .right-section, body #about #features-page .subsection3 .left-section, body #features-page .subsection3 #about .left-section, body #about #features-page .subsection4, body #features-page #about .subsection4, body #about #login-reg {
@@ -7318,7 +7316,8 @@ body #contact-page .submit-button {
 	border: none;
 	margin-top: 10px;
 }
-
+body #features-page {
+/* subsection1 ends /--------------------------------------------------------- */ }
 body #features-page .subsection1 {
 	background-color: #fff;
 	background-image: url(../img/collage21.jpg);
@@ -7654,9 +7653,9 @@ body #features-page .subsection4 .featured-ribbon {
 body #features-page .subsection4 .grow {
 	transition: all .2s ease-in-out;
 }
-
+body #features-page .subsection4 .grow:hover {
 	/*transform: scale(1.1);*/
-
+}
 body #features-page .subsection4 .pricing-plan .pricing-plan-head {
 	color: #fff;
 	border-radius: 3px 3px 0px 0px;
@@ -7920,12 +7919,21 @@ body #login-reg .btn-link-1 {
 	margin: 5px 0px;
 }
 }
+@media (max-width:1300px) {
+	.dark-mode1 {
+		display: flex;
+		align-items:center;
+	}
+}
 
 
 
 
 
 
+
+
+  
 .dark-mode footer {
 	background-color:#181f25 !important;
   }
@@ -7942,7 +7950,7 @@ body #login-reg .btn-link-1 {
     transition: 0.6s;
 }
 .dark-mode .navbar {
-    background-color:#121212;
+    background-color:#242424;
     color: #eee !important;
 }
 .dark-mode .navbar-brand h1 {

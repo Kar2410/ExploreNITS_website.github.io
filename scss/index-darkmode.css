@@ -19,7 +19,7 @@ color: #111 !important;
     color: #fff !important;
 }
 .dark-mode #about {
-    background-color:#111 !important;
+    background-color:rgb(27, 27, 27) !important;
 }
 .dark-mode .container-fluid {
     background-color: rgba(34, 32, 34, 0) !important;
@@ -32,7 +32,7 @@ color: #111 !important;
     background-color: #111 !important;
 }
 .dark-mode #about-ul  {
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: rgba(18, 20, 29, 0) !important;
 }
 .dark-mode .text-block {
     background-color: rgb(17, 17, 17) !important;

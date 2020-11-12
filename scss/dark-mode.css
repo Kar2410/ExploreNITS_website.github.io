@@ -7,7 +7,15 @@
     transition: 0.6s;
 
 }
-
+.dark-mode .wpb_wrapper h3 {
+    color: #eee !important;
+}
+.dark-mode .iconbox-content h4 {
+    color: rgb(35, 108, 168) !important;
+}
+.dark-mode .section-heading h1 {
+    color: rgb(187, 187, 187) !important;
+}
 .dark-mode .dark-mode1{
     background-color: #121212 !important;
     color: #eee;
@@ -56,7 +64,7 @@ transition: 0.6s;
 }
 
 .dark-mode .pricing-price , .pricing-plan {
-    background-color: rgb(14, 14, 14) !important;
+    background-color: rgb(44, 44, 44) !important;
     color: rgb(194, 194, 194)  !important;
     transition: 0.6s;
 
