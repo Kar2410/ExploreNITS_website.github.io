@@ -3,44 +3,34 @@
     color: #eee;
     border:none;
     margin:none;
+    transition: 0.6s;
 }
 
 .dark-mode .dark-mode1{
-    background-color: black !important;
+    background-color: #121212 !important;
     color: #eee;
     border: none;
+    transition: 0.6s;
 }
-.dark-mode .navbar {
-    background-color: black;
-    color: #eee !important;
-}
-.dark-mode .navbar-brand h1 {
-color: #eee !important;
-}
+
 .dark-mode .dark-mode{
     background-color: #111 !important;
     color: #eee;
 }
 .dark-mode .body {
-    background-color: black;
+    background-color: #121212;
+    transition: 0.6s;
 }
 .dark-mode #portfolio {
-    background-color: black !important;
+    background-color: #121212 !important;
     color:rgb(223, 223, 223) !important;
+    transition: 0.6s;
 }
 .dark-mode #portfolio h1 {
     color: #eee !important;
+    transition: 0.6s;
 }
 .dark-mode #main {
-    background-color: black !important;
-}
-.dark-mode footer {
-    background-color:black !important;
-}
-.dark-mode #footer {
-    background-color:black !important;
-}
-.dark-mode #bottom-footer {    
-    background-color:black !important;
-
+    background-color: #121212 !important;
+    transition: 0.6s;
 }

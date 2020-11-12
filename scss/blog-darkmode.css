@@ -3,39 +3,29 @@
     color: #eee;
     border:none;
     margin:none;
+    transition: 0.6s;
 }
 .light-mode .navbar {
     background-color:#fff;
+    transition: 0.6s;
     
 }
 .light-mode .navbar-brand h1 {
-color: black !important;
+color: #121212 !important;
+transition: 0.6s;
 }
 .dark-mode .dark-mode1{
-    background-color: black !important;
+    background-color: #121212 !important;
     color: #eee;
     border: none;
+    transition: 0.6s;
 }
-.dark-mode .navbar {
-    background-color: black;
-    color: #eee !important;
-}
-.dark-mode .navbar-brand h1 {
-color: #eee !important;
-}
+
 .dark-mode .body {
-    background-color: black;
+    background-color: #121212;
+    transition: 0.6s;
 }
 .dark-mode #portfolio {
-    background-color: black;
-}
-.dark-mode footer {
-    background-color:black !important;
-}
-.dark-mode #footer {
-    background-color:black !important;
-}
-.dark-mode #bottom-footer {    
-    background-color:black !important;
-
+    background-color: #121212;
+    transition: 0.6s;
 }

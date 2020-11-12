@@ -867,7 +867,7 @@ h2, h3 {
 .glyphicon-tent:before {
 	content: "\26fa";
 }
-.glyphicon-blackboard:before {
+.glyphicon-#121212board:before {
 	content: "\e218";
 }
 .glyphicon-bed:before {
@@ -3394,7 +3394,9 @@ pointer-events: none;
 	position: relative;
 	display: block;
 	padding: 10px 15px;
+	color:#363636 !important;
 }
+
 .nav > li > a:hover, .nav > li > a:focus {
 	text-decoration: none;
 	background-color: #eeeeee;
@@ -7316,8 +7318,7 @@ body #contact-page .submit-button {
 	border: none;
 	margin-top: 10px;
 }
-body #features-page {
-/* subsection1 ends /--------------------------------------------------------- */ }
+
 body #features-page .subsection1 {
 	background-color: #fff;
 	background-image: url(../img/collage21.jpg);
@@ -7653,9 +7654,9 @@ body #features-page .subsection4 .featured-ribbon {
 body #features-page .subsection4 .grow {
 	transition: all .2s ease-in-out;
 }
-body #features-page .subsection4 .grow:hover {
+
 	/*transform: scale(1.1);*/
-}
+
 body #features-page .subsection4 .pricing-plan .pricing-plan-head {
 	color: #fff;
 	border-radius: 3px 3px 0px 0px;
@@ -7925,11 +7926,35 @@ body #login-reg .btn-link-1 {
 
 
 
-
+.dark-mode footer {
+	background-color:#181f25 !important;
+  }
+  .dark-mode #footer {
+	background-color:#151a1d  !important;
+  }
+  .dark-mode #bottom-footer {    
+	background-color:#0a1014 !important;
+  
+  }
+  .dark-mode .navbar {
+    background-color: #121212;
+    color: #eee !important;
+    transition: 0.6s;
+}
+.dark-mode .navbar {
+    background-color:#121212;
+    color: #eee !important;
+}
+.dark-mode .navbar-brand h1 {
+color: #eee !important;
+}
   body.dark-mode {
 	background-color: #313131;
 	color: #DFDFDF;
   }
+  .dark-mode .nav > li > a  {
+	color: #c2c2c2 !important;
+}
   .hidden {
 	display: none;
   }

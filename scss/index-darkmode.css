@@ -9,17 +9,17 @@
     
 }
 .light-mode .navbar-brand h1 {
-color: black !important;
+color: #111 !important;
 }
 .dark-mode .dark-mode1{
-    background-color: black !important;
+    background-color: #111 !important;
     color: #eee;
 }
 .dark-mode  #navbar li {
     color: #fff !important;
 }
 .dark-mode #about {
-    background-color:black !important;
+    background-color:#111 !important;
 }
 .dark-mode .container-fluid {
     background-color: rgba(34, 32, 34, 0) !important;
@@ -29,7 +29,7 @@ color: black !important;
 }
 }
 .dark-mode .image-holder {
-    background-color: black !important;
+    background-color: #111 !important;
 }
 .dark-mode #about-ul  {
     background-color: rgba(0, 0, 0, 0) !important;
@@ -38,55 +38,85 @@ color: black !important;
     background-color: rgb(17, 17, 17) !important;
 }
 .dark-mode .about {
-    background-color: #111;
+    background-color:#121212;
+    transition: 0.6s;
+
 }
 
 .dark-mode .image-holder {
-    background-color: black !important;
+    background-color: #111 !important;
+    transition: 0.6s;
+
 }
-.dark-mode .navbar {
-    background-color: black;
-    color: #eee !important;
-}
-.dark-mode .navbar-brand h1 {
-color: #eee !important;
-}
+
 .dark-mode #features {
-    background-color: black;
+    background-color: #111;
+    transition: 0.6s;
+
+}
+.dark-mode .nav li {
+    color: #eee !important;
 }
 .dark-mode .container-fluid {
     background-color: rgba(34, 32, 34, 0) !important;
+    transition: 0.6s;
+
 }
 .dark-mode #about-ul  {
     background-color: rgba(0, 0, 0, 0) !important;
+    transition: 0.6s;
+
 }
 
 .dark-mode #news {
-    background-color: black;
+    background-color: #111;
+    transition: 0.6s;
+    
 }
 
 .dark-mode .text-block {
     background-color: rgb(17, 17, 17) !important;
+    transition: 0.6s;
+
 }
 .dark-mode .about {
     background-color: #3030 !important;
+    transition: 0.6s;
+
 }
 .dark-mode .timeline-panel {
     background-color: #3030;
+    transition: 0.6s;
+
 }
 .dark-mode .timeline-panel {
-    background-color: #3030 !important
+    background-color: rgb(24, 24, 24) !important;
+    transition: 0.6s;
+
+
 }
 .dark-mode #process {
-    background-color: black;
+    background-color: #111;
+    transition: 0.6s;
+
+}
+.timeline-badge {
+    background-color: rgb(27, 27, 27) !important;
+    color: #eee;
+}
+.dark-mode #heading {
+    color:#eee !important;
 }
 
-.dark-mode footer {
-    background-color:black !important;
+.dark-mode .section-heading h1{
+    color:#eee !important;
 }
-.dark-mode #footer {
-    background-color:black !important;
+.dark-mode .aboutul li {
+    color: rgb(161, 161, 172);
 }
-.dark-mode #bottom-footer {    
-    background-color:black !important;
+.dark-mode .timeline-panel-ul li {
+    color: rgb(161, 161, 172) !important;
+}
+.dark-mode .process-text-block {
+    color: rgb(161, 161, 172);
 }
