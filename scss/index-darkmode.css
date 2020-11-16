@@ -120,3 +120,19 @@ color: #111 !important;
 .dark-mode .process-text-block {
     color: rgb(161, 161, 172);
 }
+.dark-mode .timeline {
+   background-color: #111;
+}
+.dark-mode #timeline .timeline-item .timeline-icon  {
+
+}
+.dark-mode  #timeline .timeline-item .timeline-content {
+    background-color: rgb(67, 68, 71);
+    color: #c9c9c9;
+}
+.dark-mode .timeline-content h2 {
+    background-color: rgba(40, 17, 124, 0);
+}
+.dark-mode  .project-name {
+    color: #eee;
+}
