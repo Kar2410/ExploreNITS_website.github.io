@@ -136,3 +136,6 @@ color: #111 !important;
 .dark-mode  .project-name {
     color: #eee;
 }
+.dark-mode .navbar-brand span {
+color: #eee !important;
+}
