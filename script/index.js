@@ -41,19 +41,19 @@ function toggleIcon(e) {
 function mytheme(index) {
     switch (index) {
         case 0:
-            changeColor('cyan');
+            changeColor('blue');
             break;
         case 1:
-            changeColor('orange');
+            changeColor('blue');
             break;
         case 2:
-            changeColor('lightgreen');
+            changeColor('blue');
             break;
         case 3:
-            changeColor('red');
+            changeColor('blue');
             break;
         case 4:
-            changeColor('green');
+            changeColor('blue');
             break;
         case 5:
             changeColor('blue');
@@ -69,5 +69,3 @@ function changeColor(color) {
     $('#wrapper').removeClass();
     $('#wrapper').addClass(color);
 }
-  
-    
