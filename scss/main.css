@@ -141,7 +141,7 @@ select,
 textarea {
     color: inherit;
     font: inherit;
-    margin: 0;
+    margin: 9px;
 }
 
 button {
@@ -8119,7 +8119,7 @@ body {
     font-family: Segoe UI, Arial, Sans-Serif !important;
     font-size: 14px;
     color: #777777 !important;
-    line-height: 26px;
+    line-height: 16px;
     height: 100%;
     min-height: 100%;
 }
@@ -11517,7 +11517,7 @@ fieldset.toggle label::after {
     height: 1rem;
     position: absolute;
     left: 0;
-    top: calc((100% - 1rem) / 2);
+    top: calc((100% - 2.7rem) / 2);
     margin-left: -3rem;
     transition: filter 0.25s;
 }
