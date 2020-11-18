@@ -41,23 +41,23 @@ function toggleIcon(e) {
 function mytheme(index) {
     switch (index) {
         case 0:
-            changeColor('blue');
+            changeColor('white');
             break;
         case 1:
-            changeColor('blue');
+            changeColor('orange');
             break;
         case 2:
             changeColor('blue');
             break;
-        case 3:
-            changeColor('blue');
-            break;
-        case 4:
-            changeColor('blue');
-            break;
-        case 5:
-            changeColor('blue');
-            break;
+            // case 3:
+            //     changeColor('blue');
+            //     break;
+            // case 4:
+            //     changeColor('blue');
+            //     break;
+            // case 5:
+            //     changeColor('blue');
+            //     break;
         default:
             changeColor('blue');
     }
