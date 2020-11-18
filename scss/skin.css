@@ -195,7 +195,7 @@ body.cyan .navbar-brand h1 {
 	color: #1abac8 !important;
 }
 body.cyan .navbar-brand span {
-	color: #333333 !important;
+	color: #9c9a9a !important;
 }
 body.cyan .navbar-inverse .navbar-toggle:hover, body.cyan .navbar-inverse .navbar-toggle:focus {
 	background-color: #fff;
@@ -640,7 +640,7 @@ body.blue .navbar-brand h1 {
 	color: #159eee !important;
 }
 body.blue .navbar-brand span {
-	color: #333333 !important;
+	color: #a7a6a6 !important;
 }
 body.blue .navbar-inverse .navbar-toggle:hover, body.blue .navbar-inverse .navbar-toggle:focus {
 	background-color: #fff;
