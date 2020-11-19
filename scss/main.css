@@ -11514,10 +11514,10 @@ fieldset.toggle label {
 fieldset.toggle label::before,
 fieldset.toggle label::after {
     content: "";
-    height: 1rem;
+    height: 1.2rem;
     position: absolute;
     left: 0;
-    top: calc((100% - 2.7rem) / 2);
+    top: calc((100% - 3rem) / 2);
     margin-left: -3rem;
     transition: filter 0.25s;
 }
