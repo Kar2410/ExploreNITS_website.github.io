@@ -1,1173 +1,754 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
+
+
+<!-- Mirrored from preview.colorlib.com/theme/staging/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Oct 2020 07:42:28 GMT -->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About</title>
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="scss/main.css">
-    <link rel="stylesheet" href="scss/skin.css">
-    <link rel="icon" href="img/ELECTRALOGO.png" sizes="16x16" type="image/png">
-    <link rel="stylesheet" href="scss/about-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="./script/index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Staging Template">
+    <meta name="keywords" content="Staging, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo.png" />
+    <title>Electra society</title>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&amp;display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
+<body>
+    <!-- Page Preloder -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="img/logo/logo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+    </div>
 
-<body id="wrapper" class="body">
-    <dark id="body" class="dark-mode">
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__logo">
+            <a href="../index.html"><img src="img/logo/logo.png" alt="" height=150px; width:150px; style="filter:brightness(5000%); filter:contrast(1000%)""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__widget">
+            <span>Mail us for any querry</span>
+            <h4>societyelectra@gmail.com</h4>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
 
-
-
-
-        <header>
-            <nav class="navbar navbar-inverse">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-                        <a class="navbar-brand" href="#">
-                            <h1>ELECTRA</h1><span>ELECTRICAL ENGINEERING SOCIETY</span></a>
+    <!-- Header Section Begin -->
+    <header class="header  navbar sticky-top" style="background-color: rgba(68, 68, 68, 0.5); position: fixed;">
+        <div class="container-fluid">
+            <div class="row" style=" ">
+                <div class="col-lg-3" style="padding-left: 2rem ; margin-top: -1.5rem;">
+                    <div class="header__logo">
+                        <a href="../index.html"><img class="img-fluid rounded-circle" src="img/logo/logo.png" alt="" height="95" width="95" style="filter:brightness(5000%); filter:contrast(1000%)"></a>
                     </div>
-                    <div id="navbar" class="collapse navbar-collapse navbar-right">
-                        <ul class="nav navbar-nav">
+                </div>
+                <div class="col-lg-12" style="margin-top: -75px; margin-left: 9rem; ">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="event.html">Events</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="gallery_1.html">Gallery</a></li>
-                            <li><a href="resources.html">Resources</a></li>
-                            <li><a href="Explore_NITS/index.html">Explore NITS</a></li>
-                            <!-- <li class="active"><a href="registration.html">Sign Up</a></li> -->
-                            <li><a href="blog.html">Blog</a></li>
-                            <li>
-
-
-                                <!-- <fieldset class="toggle hidden">
-
-                                    <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()" />
-                                    <label for="dark-toggle" class="dark-mode1"></label>
-
-                                </fieldset> -->
-
+                            <li class="active"><a href="about.html">About</a></li>
+                            <li><a href="curriculum.html">Curriculum</a>
+                                <ul class="dropdown">
+                                    <li><a href="curriculum.html#intro">Introduction</a></li>
+                                    <li><a href="curriculum.html#Curriculum">Curriculum</a></li>
+                                    <li><a href="curriculum.html#departments">Departments</a></li>
+                                    <li><a href="curriculum.html#branch">Branch Change</a></li>
+                                    <li><a href="curriculum.html#cpi">CPI Calculation</a></li>
+                                    <li><a href="curriculum.html#grade">Grading</a></li>
+                                </ul>
                             </li>
+                            <li><a href="Extracurricular.html">Extracurricular</a>
+                                <ul class="dropdown">
+                                    <li><a href="Extracurricular.html#gym"> Gymkhana</a></li>
+                                    <li><a href="Extracurricular.html#cultural"> Cultural</a></li>
+                                    <li><a href="Extracurricular.html#genfresher"> General Fresher</a></li>
+                                    <li><a href="Extracurricular.html#induction">Induction</a></li>
+
+                                    <li><a href="Extracurricular.html#club"> Clubs</a></li>
+                                </ul>
+                            </li>
+                            <!--       <li><a href="campust.html">Campus Transport</a>
+                            <ul class="dropdown">
+                                <li><a href="Project-details.html">Project Details</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li> -->
+                            <!--    <li><a href="parents.html">For parents</a>
+                            <ul class="dropdown">
+                                <li><a href="Project-details.html">Project Details</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li> -->
+                            <li><a href="navigation.html">Navigation</a>
+                                <ul class="dropdown">
+                                    <li><a href="navigation.html#location">Location</a></li>
+                                    <li><a href="navigation.html#campusreach">How to reach campus</a></li>
+                                    <li><a href="contact.html#map">Map</a></li>
+
+
+                                </ul>
+                            </li>
+
+                            <li><a href="index.html">More</a>
+                                <ul class="dropdown">
+                                    <li><a href="basics.html">Basics</a>
+                                        <!--  <ul class="dropdown">
+                                <li><a href="Project-details.html">Project Details</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul> -->
+                                    </li>
+                                    <li><a href="parents.html">For parents</a>
+                                        <!--  <ul class="dropdown">
+                                <li><a href="Project-details.html">Project Details</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul> -->
+                                    </li>
+                                    <li><a href="campust.html">Campus Transport </a>
+                                        <!--  <ul class="dropdown">
+                                <li><a href="Project-details.html">Project Details</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul> -->
+                                    </li>
+                                    <li><a href="campus.html">Campus life</a>
+                                        <!--  <ul class="dropdown">
+                                <li><a href="Project-details.html">Project Details</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul> -->
+                                    </li>
+                                    <li><a href="faq.html">FAQ</a>
+                                        <!--  <ul class="dropdown">
+                                <li><a href="Project-details.html">Project Details</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul> -->
+                                    </li>
+                                </ul>
+                            </li>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+
+
+
+                    <!--   </li>
+                            <li><a href="basics.html">Basics</a>
+                            <ul class="dropdown">
+                                <li><a href="Project-details.html">Project Details</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li> -->
+
+
+
+                </div>
+                <!--<div class="col-lg-12">
+                <div class="header__widget" style="margin-left: 600px; margin-top: -40px">
+                    <span>Mail us for any querry</span>
+                    <h4>societyelectra@gmail.com</h4>
+                </div>-->
+            </div>
+        </div>
+
+
+        <div style="padding-top:2rem;">
+            <div class="canvas__open" style=""><i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="img/banner.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <div class="breadcrumb__text">
+                        <h2>About Us</h2>
+                        <div class="breadcrumb__links">
+                            <a href="index.html">Home</a>
+                            <span>About Us</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- About Page Section Begin -->
+    <section class="about-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="about__text about__page__text">
+                        <div class="section-title">
+                            <span></span>
+                            <h2>About Us</h2>
+                        </div>
+                        <div class="about__para__text">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="about__page__services">
+                        <div class="about__page__services__text">
+                            <p>The Department of Electrical Engineering of NIT, Silchar is one of the finest and well equipped Electrical departments of the north-east region. It boasts of having a highly qualified faculty with an unparalled level of expertise
+                                in their field.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="img/services/services-5.png" alt="">
+                                    <h4>Our Mission</h4>
+                                    <p>The mission of the Electrical Engineering Department is to impart quality education to our students and provide a comprehensive understanding of electrical engineering, built on a foundation of physical science, mathematics,
+                                        computing and technology and to educate a new generation of Electrical Engineers to meet the future challenges.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="services__item">
+                                    <img src="img/services/services-6.png" alt="">
+                                    <h4>Our Vision</h4>
+                                    <p>The Vision of Electrical Engineering Department is to be a model of excellence in technical education and research by producing world-class graduates who are prepared for life-long engagement in the rapidly changing
+                                        fields of electrical and related fields.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Page Section End -->
+
+    <section class="text-gray-700 body-font" style="margin-top: -150px;">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-left w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
+            </div>
+
+            <div class="flex flex-wrap -m-2">
+                <!-- profiles start -->
+                <!-- senior members -->
+
+
+
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <a href="https://www.facebook.com/profile.php?id=100009279933916">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/about/bullbul_bhaiya.jpg">
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 title-font font-medium">Bulbul Hussain</h2>
+                                <!-- <p class="text-gray-500">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <a href="https://www.facebook.com/profile.php?id=100003308682971">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/about/gaurav_bhaiya.jpg">
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 title-font font-medium">Gaurav Singh</h2>
+                                <!-- <p class="text-gray-500">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <br>
+                <br><br>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <a href="https://www.facebook.com/prastuti.mazumdar.3">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/about/Prastuti.jpg">
+                            <div class="flex-grow">
+                                <h2 class="text-gray-900 title-font font-medium">Prastuti Majumdar</h2>
+                                <!-- <p class="text-gray-500">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <a href="https://www.facebook.com/arko.kashyap">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="img/about/arko.png">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Arkadeep Kashyap</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="https://www.facebook.com/kartik.verma.5492/ ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/kartik.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Kartik Verma </h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="https://www.facebook.com/nihal.dwivedi.7549 ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/Nihal.jpeg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Nihal Dwivedi</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="https://www.facebook.com/pihu.gohain.58 ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/Priyanki.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Priyanki Priyam Borgohain </h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="https://www.facebook.com/sonalikanu.999 ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/Sonali.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Sonali Kanu </h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="https://www.facebook.com/sarmistha.bora1">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/Sarmistha.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Sarmistha Bora </h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+
+            <br><br><br>
+
+            <div class="flex flex-wrap -m-2 ">
+
+                <!-- junior members -->
+
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/biju.borah.77582">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/biju.JPG">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Biju Borah</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/debasish.konwar.25">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/debasish.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Debasish Konwar</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/people/Ritesh-Kumar/100006925869901/">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/ritesh.jpeg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Ritesh Kumar</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/people/Tanmay-Tripathy/100009726932773/ ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/tanmay.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Tanmay Tripathy</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/reetom.ranadutta ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/reetom.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Reetom Rana Dutta</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/rohan.deb.908579">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/rohan.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Rohan Deb</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="https://www.facebook.com/juman.sos  ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/juman.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Juman Jin Deka</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/arpit.jaiswal.965 ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/arpit.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Arpit Jaiswal</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="https://www.facebook.com/prakritish.nissan ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/prakritish.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Prokritish Nissan Bora</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="https://www.facebook.com/miraz.deka ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/miraj.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Miraj Deka</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/people/Soumya-Soni/100056034555533/ ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/soumya.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Soumya Soni</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="  https://www.facebook.com/people/Kavya-Bhardwaj/100008131120392/">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/kavya.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Kavya Sharma</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/ajay.dhoni.904">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/ajay.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Gudla Ajay Babu</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/gillian.anthony.18">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/gillian.jpeg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Gillian Anthony</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/people/Suman-Goswami/100058459812857/ ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/suman.jpeg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Suman Goswami</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href=" https://www.facebook.com/debalina.borah.9">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/debalina.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Debalina Borah</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="https://m.facebook.com/shriyal.tandon.1  ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/shriyal.jpeg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Shriyal Tandon</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full ">
+                    <a href="https://www.facebook.com/reisha.ahmed.7  ">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg ">
+                            <img alt="team " class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 " src="img/about/reisha.jpg">
+                            <div class="flex-grow ">
+                                <h2 class="text-gray-900 title-font font-medium ">Reisha Ahmed</h2>
+                                <!-- <p class="text-gray-500 ">UI Designer</p> -->
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg " data-setbg="img/footer-bg.jpg ">
+        <div class="container ">
+            <div class="footer__top ">
+                <div class="row ">
+                    <div class="col-lg-8 col-md-6 ">
+                        <div class="footer__top__text ">
+                            <h2>Electrical engineering department</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 ">
+                        <div class="footer__top__newslatter ">
+                            <form action="https://formspree.io/f/xnqodrdk " method="POST ">
+                                <input type="text " placeholder="Enter your email... " name="Email ">
+
+                                <button type="submit "><i class="fa fa-send "></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
+                    <div class="footer__about ">
+                        <div class="footer__logo ">
+                            <a href="# "><img class="img-fluid rounded-circle " src="img/logo/logo.png " alt=" " height="200 " width="200 " style="margin-top:-3rem; "></a>
+                        </div>
+                        <p>NIT Road, Fakiratilla <br />Silchar, Assam 788010</p>
+                        <ul>
+                            <li>nits.ac.in</li>
+                            <li>+913842242273</li>
+                        </ul>
+                        <div class="footer__social ">
+                            <a href="https://www.facebook.com/electra.nits "><i class="fa fa-facebook "></i></a>
+                            <!-- <a href="# "><i class="fa fa-twitter "></i></a> -->
+                            <!-- <a href="# "><i class="fa fa-instagram "></i></a> -->
+                            <a href="https://www.linkedin.com/company/electrical-engineering-society-nit-silchar/ "><i class="fa fa-linkedin "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6 ">
+                    <div class="footer__widget ">
+                        <h6>Quick link</h6>
+                        <ul>
+                            <li><a href="basics.html#fee ">Fee Payment</a></li>
+                            <li><a href="basics.html#coun ">Counselling doc. </a></li>
+                            <li><a href="parents.html#nearhostel ">NEARBY HOTELS</a></li>
+                            <li><a href="campust.html#bus ">Bus timings</a></li>
+                            <li><a href="faq.html ">FAQs</a></li>
                         </ul>
                     </div>
-                    <!--/.nav-collapse -->
                 </div>
-            </nav>
-            <!--/.nav-ends -->
-        </header>
-
-        <section id="top_banner">
-            <div class="banner">
-                <div class="inner text-center">
-                </div>
-            </div>
-            <!--     <div class="page_info">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-8 col-xs-6">
-                        <h4>About</h4>
+                <div class="col-lg-2 col-md-3 col-sm-6 ">
+                    <div class="footer__widget ">
+                        <h6>Top link</h6>
+                        <ul>
+                            <li><a href="about.html ">About</a></li>
+                            <li><a href="curriculum.html ">Curriculum</a></li>
+                            <li><a href="Extracurricular.html ">Extracurricular</a></li>
+                            <li><a href="contact.html ">Contact</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:right;">Home<span class="sep"> / </span><span class="current">About</span></div> -->
-            </div>
-            </div>
-            </div>
-
-            </div>
-        </section>
-
-        <section id="about-page-section-3">
-            <div class="container">
-                <div class="row">
-                    <div class="section-heading text-center">
-                        <div class="col-md-12 col-xs-12">
-                            <h1>About <span>Us</span></h1>
-                            <p>
-                                The Electra Society comprises of students of all 4 years of its department that hold certain posts such as the President, Vice President, General Secretary, Assistant General Secretary, Senior Executive members, Executive members, Technical members, Class
-                                Representatives etc.
-                                <br><br> These students together form the core of its department that act as communication passage between the other students and the faculty members and the other departments. The society holds various events throughout
-                                the year for the overall development of its students. These include: </p>
-                            <p style=" font-size: 20px; word-spacing: 2px;"> 1. PowerSurge 2. Branch Freshers 3. Technical workshops 4. Sports week</p>
-                        </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 ">
+                    <div class="footer__address ">
+                        <h6>Get In Touch</h6>
+                        <p>NIT Road, Fakiratilla, Silchar <br />Assam 788010</p>
+                        <ul>
+                            <li>societyelectra@gmail.com</li>
+                            <li>+913842242273</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-
-
-
-        <section id="team-member">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 xol-md-12 col-sm-12 col-xs-12">
-                        <div class="section-heading text-center">
-                            <h1>Our <span>Senior Members</span></h1>
-                            <p class="subheading"></p>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/dheeraj_bhaiya.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                            <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                            </span>
-                                                </div>
-                                                <h4 class="q_team_position">Bolisetti Dheeraj</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">President</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/tanmay bhaiya.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Tanmay Sardar</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">General Secretary</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/bullbul_bhaiya.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                            <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                            </span>
-                                                </div>
-                                                <h4 class="q_team_position">Bulbul Hussain</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Vice President</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/ved_bhaiya.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                                <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                                </span>
-                                                </div>
-                                                <h4 class="q_team_position">Ved Prakash Bhatt</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Assistant General Secretary</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p><br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Sunmoni_di.jpeg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Sunmoni Gohain</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Senior Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/gaurav_bhaiya.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                            <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                            </span>
-                                                </div>
-                                                <h4 class="q_team_position">Gaurav Singh</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Senior Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/dhiru_bhaiya.jpeg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                            <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                            </span>
-                                                </div>
-                                                <h4 class="q_team_position">Dhiru Kumar Talukdar</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Senior Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/kazi_bhaiya.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                                <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                                </span>
-                                                </div>
-                                                <h4 class="q_team_position">Kazi Sahariar Rahi</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Technical Head</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p><br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/nikita_di.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                                <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                                </span>
-                                                </div>
-                                                <h4 class="q_team_position">Nikita Saikia</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Literary Representative</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p><br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h1></h1>
-                        <h1></h1>
-
-                        <div class="section-heading text-center">
-                            <h1>Our <span>Junior Members</span></h1>
-                            <p class="subheading"></p>
-                        </div>
-
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/kartik.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                            <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                            </span>
-                                                </div>
-                                                <h4 class="q_team_position">Kartik Verma</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Technical Member </h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/manish.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Manish Kr Poddar</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Technical Member </h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/arko.png" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Arkadeep Kashyap</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Technical Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Nihal.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Nihal Dwivedi</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Technical Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p><br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Neelim.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Neelim Bharadwaj</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Technical Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/dhruv.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Dhruv Bajoria</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Technical Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/rishav.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Rishav Anand</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Technical Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/debanga.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Debanga Choudhury</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Technical Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p><br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>s
-                            </div>
-                        </div>
-
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Prachurya.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                            <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                            </span>
-                                                </div>
-                                                <h4 class="q_team_position">Prachurya Nath</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Technical Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Prastuti.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                                <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                                </span>
-                                                </div>
-                                                <h4 class="q_team_position">Prastuti Mazumdar</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Sarmistha.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                                    <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                                    </span>
-                                                </div>
-                                                <h4 class="q_team_position">Sarmistha Bora</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Priyanki.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                                        <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                                        </span>
-                                                </div>
-                                                <h4 class="q_team_position">Priyanki P. Borgohain</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p><br><br></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Sonali.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Sonali Kanu</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Mahi.jpeg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Mahi Kumari</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Devi.JPG" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Vipperla Devi Sree</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Samyak.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Samyak Jain</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Saurav.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Saurav Kumar Karn</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Sunil.jpeg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">M Sunil Kumar</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/manav.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Manav Sanghi</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/new_about/Ketan.jpg" />
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-        				<i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-    					</span>
-                                                </div>
-                                                <h4 class="q_team_position">Ketan Kumar Poddar</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Executive Member</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="section-heading text-center" style="margin-top: 85px;">
-                        <h1>Our <span>Team Members</span></h1>
-                        <p class="subheading"></p>
-                    </div>
-                    <div class="wpb_column vc_column_container col-md-3 col-sm-6 col-xs-6 block mybox">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="our-team main-info-below-image">
-                                        <div class="our-team-inner">
-                                            <div class="our-team-image">
-                                                <img src="img/about/ved.jpg">
-                                                <div class="qodef-circle-animate"></div>
-                                                <div class="our-team-position-icon">
-                                                    <span class="qodef-icon-shortcode circle">
-                            <i class="qodef-icon-simple-line-icon fa fa-pencil qodef-icon-element"></i>
-                            </span>
-                                                </div>
-                                                <h4 class="q_team_position">VED PRAKASH BHATT</h4>
-                                            </div>
-                                            <div class="our-team-info">
-                                                <div class="our-team-title-holder">
-                                                    <h5 class="our-team-name">Web Developer</h5>
-                                                </div>
-                                                <div class='our-team-text-inner'>
-                                                    <div class='our-team-description'>
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-
-
-
-
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-
-        <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                            <h4>Address</h4>
-                            <hr/>
-                            <p>National Institue Of Technology Silchar, Assam, PIN:788010
+            <div class="copyright ">
+                <div class="row " style="text-align: center; ">
+                    <div class="col-lg-8 col-md-7 ">
+                        <div class="copyright__text ">
+                            <p>Copyright ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved
                             </p>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                            <h4>Useful Links</h4>
-                            <hr/>
-                            <ul class="footer-links">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="event.html">Events</a></li>
-                                <li><a href="gallery_1.html">Gallery</a></li>
-                                <li><a href="resources.html">Resources</a></li>
-                                <!-- <li><a href="registration.html">Sign Up</a></li> -->
-                                <li><a href="blog.html">Blog</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-3 col-sm-3 col-xs-12 <block> </block>">
-                        <div class="footer-block">
-                            <h4>Recent Posts</h4>
-                            <hr/>
-                            <ul class="footer-links">
-                                <li>
-                                    <a href="#" class="post"></a>
-                                    <p class="post-date"></p>
-                                </li>
-                                <li>
-                                    <a href="#" class="post"></a>
-                                    <p class="post-date"></p>
-                                </li>
-                                <li>
-                                    <a href="#" class="post"></a>
-                                    <p class="post-date"></p>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-3 col-xs-12 block">
-                        <div class="footer-block">
-                            <h4>Contact</h4>
-                            <hr/>
-                            <ul>
-                                <li>
-                                    <a>
-                                        <h5>President</h5> Bolisetti Dheeraj : 9131549996</a>
-                                </li>
-                                <li>
-                                    <a>
-                                        <h5>General Secretary</h5>Tanmay Sardar: 8305035560</a>
-                                </li>
-                                <li>
-                                    <a>
-                                        <h5>Email us at</h5> societyelectra@gmail.com</a>
-                                </li>
-
-
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-        </section>
-
-        <section id="bottom-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Use</a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 copyright">
-                        Developed by <a href="#">Electra Electrical Engineering Society</a> designed by <a href="#">Designing Team</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <div id="panel">
-            <div id="panel-admin">
-                <div class="panel-admin-box">
-                    <div id="tootlbar_colors">
-                        <button class="color" style="background-color:#159eee;" onclick="mytheme(0)"> </button>
-                        <button class="color" style="background-color:#ffffff;" onclick="mytheme(1)"> </button>
-                        <button>
-                            <fieldset class="toggle hidden">
-                                <input type="checkbox" name="dark-mode" id="dark-toggle" class="dark-mode1" onclick="toggleDarkLight()" />
-                                <label for="dark-toggle" class="dark-mode1"></label>
-                            </fieldset>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-            <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
         </div>
-    </dark>
+    </footer>
+    <!-- Footer Section End -->
 
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.slicknav.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/slick.min.js "></script>
+    <script src="js/main.js "></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13 "></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
 
 </body>
-<script src="./script/darkmode.js"></script>
+
+
+<!-- Mirrored from preview.colorlib.com/theme/staging/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Oct 2020 07:42:29 GMT -->
 
 </html>
